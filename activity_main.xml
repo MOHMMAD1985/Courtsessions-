@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="دفتر الجلسات" android:textSize="28sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+<Button android:id="@+id/mic" android:layout_width="match_parent" android:layout_height="64dp" android:text="🎤 تحدث لإضافة جلسة" android:textSize="18sp"/>
+<TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="8dp" android:text="قل مثلاً: جلسة قضية 123 للموكل أحمد في محكمة الرياض يوم الأحد القادم الساعة 10 صباحاً"/>
+<EditText android:id="@+id/tx" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="النص المُملى (يمكنك تعديله)" android:gravity="start" android:minLines="2"/>
+<Button android:id="@+id/parse" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="حلّل النص"/>
+<EditText android:id="@+id/f_case" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="رقم القضية" android:gravity="start" />
+<EditText android:id="@+id/f_client" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="الموكل" android:gravity="start" />
+<EditText android:id="@+id/f_court" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="المحكمة" android:gravity="start" />
+<EditText android:id="@+id/f_circuit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="الدائرة" android:gravity="start" />
+<EditText android:id="@+id/f_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="التاريخ (اضغط للاختيار)" android:gravity="start" android:focusable="false"/>
+<EditText android:id="@+id/f_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="الوقت (اضغط للاختيار)" android:gravity="start" android:focusable="false"/>
+<EditText android:id="@+id/f_notes" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ملاحظات" android:gravity="start" />
+<Button android:id="@+id/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="حفظ الجلسة وجدولة التذكيرات"/>
+<Button android:id="@+id/perms" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ضبط الإذونات والإشعارات"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="الجلسات المحفوظة" android:textSize="20sp" android:textStyle="bold" android:paddingTop="16dp"/>
+<LinearLayout android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
+</ScrollView>
